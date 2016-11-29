@@ -1,0 +1,26 @@
+{
+  "name": "getapp",
+  "version": "0.1.0",
+  "description": "getapp for Shuipingzuo",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shuipingzuo/getapp.git"
+  },
+  "keywords": [
+    "getapp"
+  ],
+  "author": "gavinning",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shuipingzuo/getapp/issues"
+  },
+  "homepage": "https://github.com/Shuipingzuo/getapp#readme",
+  "dependencies": {
+    "glob": "^7.1.1",
+    "vpm-config": "^2.1.2"
+  }
+}
