@@ -16,7 +16,7 @@ getapp.config.set('cwd', path.join(__dirname, 'apps'));
 getapp.get(name)
 
 // 2. 批量获取所有app
-getapp.getAll().then(apps => console.log(apps))
+getapp.getAll()
 ```
 
 ### Class

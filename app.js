@@ -19,15 +19,7 @@ class Getapp {
     }
 
     getAll() {
-        let apps = []
-        let opt = { cwd: this.options.cwd }
-        return new Promise((res, rej) =>
-            glob('*/', opt, (err, arr) =>
-                err ?
-                    rej(err):
-                    res(arr.map(name => this.get(name)))
-            )
-        )
+        return glob.sync('*/', {cwd: this.options.cwd}).map(name => this.get(name))
     }
 }
 
