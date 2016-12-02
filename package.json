@@ -1,6 +1,6 @@
 {
   "name": "getapp",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "getapp for Shuipingzuo",
   "main": "app.js",
   "scripts": {

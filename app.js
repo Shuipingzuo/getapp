@@ -11,7 +11,8 @@ class Getapp {
 
     get(name) {
         try{
-            return require(path.join(this.options.cwd, name))
+            let App = require(path.join(this.options.cwd, name))
+            return new App(this.config.get('system'))
         }
         catch(e){
             throw e

@@ -9,14 +9,17 @@ npm i getapp --save
 
 ### Usage
 ```js
-const getapp = require('getapp');
-getapp.config.set('cwd', path.join(__dirname, 'apps'));
+const getapp = require('getapp')
+// Apps所在的目录
+getapp.config.set('cwd', url)
+// Apps注册的父级宿主
+getapp.config.set('system', system)
 
 // 1. 获取单个app
-getapp.get(name)
+getapp.get(name).reg()
 
 // 2. 批量获取所有app
-getapp.getAll()
+getapp.getAll().forEach(app => app.reg())
 ```
 
 ### Class
